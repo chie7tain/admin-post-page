@@ -1,0 +1,96 @@
+
+/* MEDIA QUERY */
+/* responsive media querry for  */
+/*
+@media(max-width: 1200px) {
+    .sidebar-nav-link-text {
+        font-size: 1.2em;
+        margin-left: 1em;
+    }
+
+    .sidebar-nav-link {
+        grid-template-columns: 1fr 4fr;
+        padding: 1em 1em;
+        margin-bottom: 1.5em;
+    }
+
+    .sidebar-profile-name {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .sidebar-profile-id {
+        font-size: .9em;
+    }
+
+    .sidebar-profile-img {
+        width: 40%;
+        height: auto;
+    }
+} */
+
+
+/* MEDIA QUERY */
+
+/* MEDIA QUERY */
+
+@media(max-width: 992px) {
+    /* styles for sidebar */
+    #sidebar {
+        width: 0%;
+    }
+
+    .sidebar-active {
+        width: 250px !important;
+        z-index: 999999 !important;
+        position: fixed !important;
+        top: 10%;
+    }
+    /* end of styles for sidebar */
+    /* =========================== */
+    /* styles for tobar */
+    #topbar {
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .topbar-left {
+        display: flex;
+        align-items: center;
+    }
+
+    .topbar-head-text {
+        margin-left: 1em;
+    }
+
+    .nav-toggle-img {
+        display: block;
+        height: auto;
+        width: 11%;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: opacity;
+    }
+
+    .nav-toggle-img:hover {
+        opacity: 0.5;
+    }
+
+/* end of styles for topbar */
+/* ===================== */
+/* styles for post page */
+    #post-page {
+        left: 0;
+        width: 100%;
+    }
+    /* end of styles for post page */
+    /* ============================== */
+}
+
+/* MEDIA QUERY */
+@media(max-width: 768px) {
+    .topbar-email {
+        display: none;
+    }
+}

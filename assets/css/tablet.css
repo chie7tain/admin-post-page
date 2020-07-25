@@ -1,0 +1,325 @@
+@media only screen and (min-width:425px) and (max-width:960px){
+/* ================================= */
+/* styles for sidebar */
+#sidebar{
+    background:var(--mainblue);
+    color:var(--mainWhite);
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:40%;
+    height: 100%;
+    padding:1rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+.sidebar-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar-profile-img{
+  width:80px;
+}
+.profile-name{
+   font-family: 'Fira Code', monospace;
+   font-size: .8rem;
+}
+.profile-id{
+    font-family: 'Fira Code', monospace;
+    font-size: .7rem;
+}
+.sidebar-link-container{
+    width:100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.nav-item-container{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+    /* text-align: center; */
+    color:var(--mainWhite);
+}
+.nav-item-container a{
+    text-decoration: none;
+}
+.nav-text{
+    width:50%;
+    letter-spacing: 0.1rem;
+    font-size:.7rem;
+    text-align: left;
+}
+
+.logout-container{
+    width:100%;
+    justify-content: space-between;
+}
+.nav-icon{
+    font-size:1.6rem;
+}
+/* end of styles for sidebar */
+/* ======================== */
+/* styles for topbar post and footer container */
+.header-post-footer{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    position:absolute;
+    right:0px;
+    margin-left:28%;
+    width:100%;
+}
+/* end of styles for topbar post and footer container */
+/* =========================== */
+/* styles for header */
+#topbar{
+    height: 15vh;
+    background:var(--mainblue);
+    color:var(--mainWhite);
+    padding:1rem;
+    width:100%;
+    align-self: flex-end;
+    display: flex;
+    position: sticky;
+    top:0px;
+    z-index: 1;
+}
+.page-title-container{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+}
+.main-heading{
+  font-size: 1.5rem;
+}
+.notification-and-email-container{
+    width:30%;
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
+}
+.user-email{
+  font-size: .8rem;
+    font-family: 'Fira Code', monospace;
+}
+.bell-container{
+    position: relative;
+}
+.fa-bell{
+    font-size: 1.5rem;
+
+}
+.fa-circle{
+    position: absolute;
+    right: -4px;
+    top:-6px;
+    color:rgb(245, 32, 32);
+}
+/* end of styles for header */
+/* ======================== */
+/* styles for post container/section */
+#post-page-container{
+    padding:1rem;
+    width:95%;
+    justify-self: center;
+    border-top-left-radius: var(--mainBorderRadius);
+    border-bottom-left-radius: var(--mainBorderRadius);
+    box-shadow:  0px 4px 8px 2px rgba(8, 7, 5, 0.25);
+    margin-top: 2.5rem;
+}
+.create-post-container{
+    display: flex;
+    width:90%;
+    justify-content: space-around;
+}
+.image-of-writer{
+    width:50px;
+}
+.text-area-container{
+    position: relative;
+}
+.fa-times-circle{
+    position: absolute;
+    right:-22px;
+    top:-25px;
+    font-size: 2rem;
+    color:var(--mainLightBlue);
+}
+.text-area{
+    height:100%;
+    text-indent: 5px;
+    padding:.5rem;
+    width:100%;
+    border:1px solid var(--mainblue);
+    border-radius: var(--mainBorderRadius);
+}
+.emoji-container-post-btn-container{
+    position:absolute;
+    bottom: 1px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 2rem; */
+    /* border:1px solid; */
+}
+.emoji-container{
+    width:20%;
+    display: flex;
+    justify-content: space-around;
+}
+.icon{
+    font-size:30px;
+}
+.post-btn-container{
+    width:15%;
+    margin:1%;
+}
+.post-btn{
+    padding:.7rem;
+    border-radius: var(--mainBorderRadius);
+    background: var(--mainOrange);
+    color:var(--mainWhite);
+    letter-spacing:var(--mainSpacing);
+    transition: var(--mainTransition);
+    width:100%;
+    cursor: pointer;
+    border:none;
+}
+.post-btn:hover{
+    background:var(--mainGrey);
+    color:var(--mainOrange);
+    border:1px solid var(--mainOrange)!important;
+}
+/* styles for post feed section  */
+.recent-post-item-container{
+    display: flex;
+    justify-content: space-around;
+}
+.image-attached-to-post-container{
+    margin:10px;
+}
+.post-proper-container{
+   display: flex;
+   flex-direction: column;
+}
+.author-name{
+    font-size:.8rem;
+}
+.title-of-post{
+    font-size: 1.2rem;
+}
+.read-more-btn-container{
+    width:100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.read-more-btn{
+    background: none;
+    border:none;
+    color:var(--mainOrange);
+    letter-spacing: var(--mainSpacing);
+}
+
+.post-count{
+    border:none;
+    background:var(--mainblue);
+    color:var(--mainWhite);
+    padding:.3rem .7rem;
+    border-radius: var(--mainBorderRadius);
+    transition: var(--mainTransition);
+}
+.post-count-btn:hover{
+    background: var(--mainGrey);
+    color:var(--mainblue);
+}
+/* end of style for post feed section */
+/* ============================================ */
+/* end of styles for main section */
+/* ======================= */
+/* styles for footer */
+#footer-section{
+    height:20vh;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end of styles for footer */
+/* ================================ */
+  /* ============================ */
+
+/* styles for responsive nav bar */
+.navigation{
+  position: absolute;
+  top:60px;
+  background:var(--mainDarkBlue);
+  height: 100vh;
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+  transform:translateX(-100%);
+  transition:all 0.4s linear;
+  opacity: none;
+}
+.burger{
+  width:45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--mainTransition);
+}
+.line1,.line2,.line3{
+  width:40px;
+  background:var(--mainGrey);
+  height:5px;
+  margin:2.5px;
+  transition: all 1s ease;
+}
+.line3{
+  align-self: flex-start;
+  width:20px;
+}
+.toggle .line1{
+  transform:rotate(-45deg) translate(-10px,6px);
+
+}
+.toggle .line2{
+  opacity:0;
+}
+.toggle .line3{
+  transform:rotate(45deg) translate(-10px,-6px);
+  width:40px;
+}
+.nav-active{
+  transform:translateX(0%);
+}
+.navigation li{
+  opacity:0;
+}
+/* @keyframes navLinkFade{
+  from{
+    opacity:0;
+    transform:translateX(100px);
+  }
+  to{
+    opacity:1;
+    transform:translateX(0px);
+  }
+} */
+/* end of styles for responsive nav bar */
+/* ============================== */
+}

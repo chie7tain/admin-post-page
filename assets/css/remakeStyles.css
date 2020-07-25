@@ -1,0 +1,23 @@
+/* style variables */
+:root{
+    --mainblue:#10507A;
+    --mainWhite:#fff;
+    --mainBoxShadow:box-shadow: 4px 4px 8px rgba(8, 7, 5, 0.25);
+    --mainBorderRadius:15px;
+    --mainGrey: #E5E5E5;
+    --mainOrange: #FF9501;
+    --mainLightBlue: #04ABFB;
+    --mainSpacing: 0.1rem;
+  --mainTransition: all 0.3s linear;
+}
+/* end of variables */
+/* ================== */
+html{
+  scroll-behavior: smooth;
+  scroll-margin-top: 10px;
+}
+/* styles for main container*/
+.main-container{
+    background: var(--mainGrey);
+}
+/* end of styles for main-container */

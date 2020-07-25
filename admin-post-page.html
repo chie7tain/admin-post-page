@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- styles  -->
+		<!-- bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+				/>
+				<!-- end of bootstrap -->
+				<!-- ================== -->
+		<link rel="stylesheet" href="./assets/css/remakeStyles.css" />
+		<link rel="stylesheet" href="./assets/css/desktop.css">
+		<link rel="stylesheet" href="./assets/css/tablet.css">
+		<link rel="stylesheet" href="./assets/css/mobile.css">
+
+		<!-- end of styles -->
+		<!-- ======================== -->
+		<!-- fonts from googel -->
+						<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+							<!-- font -->
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+							<!-- end of google fonts -->
+		<!-- end of fonts from google -->
+		<!-- ========================= -->
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/52f2afaff9.js" crossorigin="anonymous"></script>
+	<!--end of font awesome  -->
+		<title>Admin post page</title>
+	</head>
+	<body>
+		<!-- main container -->
+		<section class="main-container">
+		<!-- sidebar section -->
+        <section id="sidebar" class="navigation">
+					<div class="sidebar-profile responsive">
+						<img src="./assets/images/mainpage images/admin-image.png" alt="" class="sidebar-profile-img">
+						<h5 class="profile-name">Kanu Nwankwo</h5>
+						<p class="profile-id">INTERNSHIP ID: HNG-05406</p>
+					</div>
+<!-- side bar links -->
+					<div class="sidebar-link-container">
+<!-- =============================== -->
+							<!-- nav links item -->
+							<a href="#" class="sidebar-nav-link sidebar-logout-link responsive ">
+								<div class="nav-item-container">
+								<i class="fa fa-tachometer nav-icon" aria-hidden="true"></i>
+								<p class="nav-text">Dashboard</p>
+								</div>
+							</a>
+							<!-- end of nav link item -->
+							<!-- nav links item -->
+							<a href="#" class="sidebar-nav-link sidebar-logout-link responsive ">
+								<div class="nav-item-container">
+								<!-- <img src="./assets/images/mainpage images/tasks-icon.png" alt="" class="nav-icon"> -->
+								<i class="fa fa-tasks nav-icon" aria-hidden="true"></i>
+								<p class="nav-text">Tasks</p>
+								</div>
+							</a>
+							<!-- end of nav link item -->
+							<!-- nav links item -->
+							<a href="#" class="sidebar-nav-link sidebar-logout-link responsive">
+								<div class="nav-item-container">
+								<i class="fa fa-paper-plane-o nav-icon" aria-hidden="true"></i>
+								<p class="nav-text">Posts</p>
+								</div>
+							</a>
+							<!-- end of nav link item -->
+							<!-- nav links item -->
+							<a href="#" class="sidebar-nav-link sidebar-logout-link responsive">
+								<div class="nav-item-container">
+								<!-- <img src="./assets/images/mainpage images/calendar-icon.png" alt="" class="nav-icon"> -->
+								<i class="fa fa-calendar nav-icon" aria-hidden="true"></i>
+								<p class="nav-text">Calender</p>
+								</div>
+							</a>
+							<!-- end of nav link item -->
+<!-- ======================== -->
+					</div>
+					<!-- end of link container -->
+					<div class="logout-container responsive">
+						<!-- nav links item -->
+						<a href="#" class="sidebar-nav-link sidebar-logout-link">
+							<div class="nav-item-container">
+								<!-- <img src="./assets/images/mainpage images/logout-icon.png" alt="" class="nav-icon"> -->
+								<i class="fa fa-sign-out nav-icon" aria-hidden="true"></i>
+								<p class="nav-text">Log Out</p>
+							</div>
+						</a>
+						<!-- end of nav link item -->
+					</div>
+        </section>
+<!-- end of sidebar section -->
+<!-- ============================================= -->
+<!-- header,post page and footer container -->
+		<div class="header-post-footer">
+
+<!-- header section -->
+        <header id="topbar" >
+						<div class="page-title-container">
+							<div class="heading-container">
+							<h1 class="main-heading">Posts</h1>
+							</div>
+
+
+							<div class="notification-and-email-container">
+								<p class="user-email">kanuNwankwo@gmail.com</p>
+								<div class="bell-container">
+									<i class="fa fa-bell " aria-hidden="true"></i>
+									<i class="fa fa-circle" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="burger">
+								<div class="line1"></div>
+								<div class="line2"></div>
+								<div class="line3"></div>
+							</div>
+						</div>
+        </header>
+<!-- end of header section -->
+<!-- ============================================= -->
+<!-- main section -->
+        <main id="post-page-container">
+						<section class="create-post-container">
+							<div class="image-container">
+								<img class="image-of-writer" src="./assets/images/mainpage images/admin-image.png" alt="image of the admin">
+							</div>
+							<div class="text-area-container">
+								<div class="times-container">
+										<i class="fa fa-times-circle" aria-hidden=" true"></i>
+								</div>
+
+								<textarea class="text-area" name="" id="post-input" cols="100" rows="10" placeholder="Compose the next game of thrones"></textarea>
+								<div class="emoji-container-post-btn-container">
+									<div class="emoji-container">
+										<i class="fa fa-picture-o icon" aria-hidden="true"></i>
+										<i class="fa fa-smile-o icon" aria-hidden="true"></i>
+										<!-- <i class="emoji">&#128513</i> -->
+									</div>
+									<div class="post-btn-container">
+										<button class="post-btn">Post</button>
+									</div>
+								</div>
+							</div>
+
+						</section>
+						<section class="post-feed-container">
+							<hr class="ruler">
+							<!-- individual-post -->
+							<div class="recent-post-item-container">
+								<div class="image-attached-to-post-container">
+									<img class="image-of-writer" src="./assets/images/mainpage images/admin-image.png" alt="image of admin">
+								</div>
+								<div class="post-proper-container">
+									<h4 class="author-name">Roman Reigns</h4>
+									<h2 class="title-of-post">
+										Introduction of UI/UX Design
+									</h2>
+									<p class="post-text">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit mollitia cum modi consequatur et delectus atque! Quas magnam perspiciatis laborum deleniti. Repudiandae sapiente fuga modi reprehenderit, repellat cumque exercitationem vel?Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, animi maxime adipisci maiores, alias enim reiciendis, ab sunt incidunt distinctio dolorem expedita eaque vitae velit nostrum libero odit modi eum.
+									</p>
+									<div class="read-more-btn-container">
+										<button class="read-more-btn">Read more</button>
+									</div>
+								</div>
+							</div>
+							<!-- end of individual post -->
+							<!-- ======================= -->
+							<div class="post-count-container">
+								<span class="post-count">1 of 12</span>
+							</div>
+						</section>
+        </main>
+<!-- end of main section  -->
+<!-- ================================== -->
+<!-- footer section -->
+				<footer id="footer-section">
+					<div class="copyright-container">
+						<span>&copy; 2020 | HNG Board</span>
+					</div>
+				</footer>
+<!-- end of footer section -->
+<!-- =============================== -->
+		</div>
+<!-- end of header,post page and footer container -->
+	</section>
+<!-- end of main container -->
+<!-- ================================ -->
+<!-- scripts main jS Jquery popper -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<!-- <script src="./assets/scripts/script.js"></script> -->
+		<script src="./assets/scripts/app.js"></script>
+	</body>
+</html>

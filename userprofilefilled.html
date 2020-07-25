@@ -1,0 +1,173 @@
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+			crossorigin="anonymous"
+        />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/userprofileaction.css" />
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+        <title>User Profile Filled</title>
+        <link rel="icon" type="img/png" href="assets/images/mainpage images/hng-icon.png">
+
+        <style>
+            input[type=text],input[type=email],input[type=textarea]{
+            border: none; 
+            background: rgba(196, 196, 196, 0.4) !important;
+            }
+        </style>
+	</head>
+	<body>
+        <section id="sidebar">
+			<div class="sidebar-profile">
+				<img src="./assets/images/mainpage images/image 5.png" alt="" class="sidebar-profile-img">
+				<h5 class="sidebar-profile-name mt-2">Franklyn B.Epidi</h5>
+				<p class="sidebar-profile-id mt-1">INTERNSHIP ID: HNG-05406</p>
+			</div>
+
+			<div class="sidebar-links">
+				<a href="#" class="sidebar-nav-link">
+					<img src="./assets/images/mainpage images/dashboard-icon.png" alt="" class="sidebar-nav-link-img">
+					<p class="sidebar-nav-link-text align-self-center">Dashboard</p>
+				</a>
+
+				<a href="#" class="sidebar-nav-link">
+					<img src="./assets/images/mainpage images/tasks-icon.png" alt="" class="sidebar-nav-link-img">
+					<p class="sidebar-nav-link-text">Tasks</p>
+				</a>
+
+				<a href="#" class="sidebar-nav-link">
+					<img src="./assets/images/mainpage images/posts-icon.png" alt="" class="sidebar-nav-link-img">
+					<p class="sidebar-nav-link-text">Posts</p>
+				</a>
+
+				<a href="#" class="sidebar-nav-link">
+					<img src="./assets/images/mainpage images/calendar-icon.png" alt="" class="sidebar-nav-link-img">
+					<p class="sidebar-nav-link-text">Calendar</p>
+				</a>
+
+				<a href="#" class="sidebar-nav-link sidebar-logout-link">
+					<img src="./assets/images/mainpage images/logout-icon.png" alt="" class="sidebar-nav-link-img">
+					<p class="sidebar-nav-link-text">Log Out</p>
+				</a>
+			</div>
+        </section>
+
+        <header id="topbar" class="d-flex align-items-center justify-content-between">
+			<div class="topbar-left">
+				<img src="./assets/images/mainpage images/hamburger.png" alt="" class="nav-toggle-img" id="nav-toggle">
+				<h2 class="topbar-head-text">User Profile</h2>
+			</div>
+			
+			<div class="topbar-right d-flex align-items-center">
+				<p class="topbar-email my-auto mr-5">Franklunb.e@gmail.com</p>
+				<img src="./assets/images/mainpage images/bell.png" alt="" class="topbar-icon">
+			</div>	
+        </header>
+
+        <main id="userprofile-action-page">
+            <section>
+                <div class="container" style="padding-left: 7%;padding-right: 7%">
+                <div class="row">
+                    <div class="user col-sm-4 col-12">
+                        <img src="assets/images/userprofileaction/user.png" class="userimg">
+                        <div class="username"> 
+                            Franklyn B. Epidi
+                        </div>
+                        <div class="userid">INTERNSHIP ID: HNG-05406</div>
+                    </div>
+
+                    <div class="user-tracks col-sm-8 col-12">
+                        <h1>Your Tracks</h1>
+                        <div class="trackdiv">
+                            <img src="assets/images/userprofileaction/brush.png" >
+                            <span class="track-name pr-2">Design
+                            </span>
+                            <span class="track-des">UI/UX Design Track</span>                       
+                        </div> 
+
+                        <div class="trackdiv">
+                                <img src="assets/images/userprofileaction/suitcase.png">
+                                <span class="track-name">General
+                                </span> 
+                            <span class="track-des">A General Track For Everyone</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 user_name">
+                                <label for="username">User Name</label>
+                                <input type="text" class="form-control" id="username" placeholder="Franklyn B. Epidi" disabled>
+                            </div>
+                        
+                          <div class="form-group col-md-6 email_add">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control " id="email" placeholder="franklynbe@gmail.com" disabled>
+                          </div>
+                          
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6 last_name">
+                              <label for="Lname">Last Name</label>
+                              <input type="text" class="form-control" id="Lname" placeholder="Epidi" disabled>
+                            </div>
+                            <div class="form-group col-md-6 first_name">
+                              <label for="Fname">First Name</label>
+                              <input type="text" class="form-control" id="Fname" placeholder="Franklyn" disabled>
+                            </div>
+                          </div>
+    
+                        <div class="form-group">
+                          <label for="Location">Location</label>
+                          
+                          <input type="text" list="location-names" class="form-control" id="Location" placeholder="USA" disabled>
+                          <datalist id="location-names">
+                            <option value="Nigeria">
+                            <option value="India">
+                            <option value="USA">
+                        </datalist>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2">About Me</label>
+                            <input type="textarea" class="form-control" id="about_me" disabled placeholder="I am an excellent UI/UX designer with a knowledge of illustration and a bit of HTML and CSS skills.">
+                          </div>
+                        <div class="form-group" style="text-align: center;">
+                            <button type="submit" class="btn btn-warning"> <span class="button_text">Edit Profile</span> </button>
+                        </div>
+                    </form>
+                </div>
+                </div>
+                </div>
+
+            </section>  
+        </main>
+
+
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+			crossorigin="anonymous"
+		></script>
+		<script src="./assets/scripts/script.js"></script>
+	</body>
+</html>
